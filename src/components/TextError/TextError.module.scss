@@ -1,0 +1,9 @@
+.error {
+    display: flex;
+    justify-content: center;
+
+    &__title {
+        color: rgb(253, 61, 61);
+        font-size: 26px;
+    }
+}

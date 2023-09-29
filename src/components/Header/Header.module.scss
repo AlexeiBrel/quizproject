@@ -1,0 +1,40 @@
+@import "../../mixins/mixin.scss";
+
+.header {
+    &__title {
+        @include font(normal, 700, 40px, normal, 0, #000000);
+        text-wrap: balance;
+    }
+    &__subtitle {
+        @include font(normal, 400, 20px, normal, 0, #000000);
+        margin-top: 30px;
+        max-width: 580px;
+        width: 100%;
+        text-wrap: balance;
+    }
+}
+
+@media all and (max-width: 790px) {
+    .header {
+        &__title {
+            font-size: 30px;
+        }
+        &__subtitle {
+            font-size: 18px;
+        }
+    }
+}
+
+@media all and (max-width: 550px) {
+    .header {
+        &__title {
+            font-size: 26px;
+            text-align: center;
+        }
+        &__subtitle {
+            font-size: 17px;
+            text-align: center;
+            margin-top: 15px;
+        }
+    }
+}

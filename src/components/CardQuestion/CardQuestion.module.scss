@@ -1,0 +1,105 @@
+@import "../../mixins/mixin.scss";
+
+.card {
+    border-radius: 10px;
+    background: #dfe5ff;
+    max-width: 868px;
+    width: 100%;
+    height: 550px;
+    padding: 35px;
+
+    &__wrap {
+        max-width: 450px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+}
+
+.total__question {
+    @include font(normal, 400, 16px, normal, 0, #9a9a9a);
+}
+
+.progress {
+    border: 1px solid #434b6c;
+    background: #ffffff;
+    height: 9px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 5px;
+
+    &__item {
+        background: linear-gradient(90deg, #cfecd0, #a0cea7, #9ec0db);
+        height: 5px;
+        border-radius: 10px;
+        transition: width 0.5s ease-in-out;
+    }
+}
+
+.title {
+    @include font(normal, 700, 20px, normal, 0, #000000);
+    margin-top: 30px;
+}
+
+.list__answers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn__answer {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    @include font(normal, 400, 15px, normal, 0, #000000);
+    position: relative;
+    transition: background 0.3s ease;
+}
+
+.btn__answer:hover {
+    background: #bfc2fe;
+}
+
+.btn__block {
+    margin-top: auto;
+}
+
+.btn__back {
+    background: #ffffff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 35px;
+    margin-top: 30px;
+    cursor: pointer;
+    @include font(normal, 700, 15px, normal, 0, #000000);
+    transition: background 0.3s ease;
+}
+
+.btn__back:hover {
+    background: #bfc2fe;
+}
+
+.btn__back:disabled {
+    background: #bababa;
+    cursor: not-allowed;
+}
+
+@media all and (max-width: 550px) {
+    .card {
+        padding: 20px;
+    }
+}
+
+@media all and (max-width: 435px) {
+    .card {
+        padding: 20px 10px;
+    }
+}
