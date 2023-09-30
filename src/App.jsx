@@ -12,6 +12,7 @@ const App = () => {
       <Route element={<LayoutPage />}>
         <Route path='/' element={<HomePage />} />
         <Route path='result' element={<ResultPage />} />
+        <Route path='*' element={<HomePage />} />
       </Route>
     </Routes>
 
