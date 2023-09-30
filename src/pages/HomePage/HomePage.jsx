@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import CardQuestion from '../../components/CardQuestion/CardQuestion';
 import Header from '../../components/Header/Header';
 
